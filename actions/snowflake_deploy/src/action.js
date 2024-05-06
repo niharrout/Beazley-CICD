@@ -29,6 +29,7 @@ async function run() {
       username: USER_NAME,
       password: P_W,
     };
+    // let host = "40.78.156.172";
     let body_1 = {
       UserName: "niharrout",
       RepoType: "GITHUB",
