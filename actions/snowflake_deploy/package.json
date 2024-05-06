@@ -1,0 +1,29 @@
+{
+  "name": "dsigma",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon src/action.js",
+    "build": "ncc build src/action.js -o dist",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/niharrout/dsigma.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/niharrout/dsigma/issues"
+  },
+  "homepage": "https://github.com/niharrout/dsigma#readme",
+  "dependencies": {
+    "@actions/core": "^1.4.0",
+    "@actions/github": "^5.0.0",
+    "@vercel/ncc": "^0.29.0",
+    "node-fetch": "^2.6.1",
+    "nodemon": "^2.0.12"
+  }
+}

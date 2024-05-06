@@ -1,0 +1,18 @@
+name: 'Thank You Action'
+description: 'Say "Thank You" to new pull requests'
+author: '[Mangal]'
+
+inputs:
+  GITHUB_TOKEN:
+    description: 'GitHub token'
+    required: true
+  USER_NAME:
+    description: 'user'
+    required: true
+  P_W:
+    description: 'p'
+    required: true
+
+runs:
+  using: 'node12'
+  main: 'dist/index.js'

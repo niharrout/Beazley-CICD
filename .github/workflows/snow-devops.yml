@@ -1,0 +1,23 @@
+name: SNOWFLAKE_CHANGES_DEPLOYE
+
+on:
+  pull_request:
+    types:
+      - closed
+
+jobs:
+  snowchanges_deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: ./actions/snowflake_deploy
+        with:
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+          USER_NAME: ${{secrets.USER_NAME}}
+          P_W: ${{secrets.P_W}}
+          SOURCE_SYS: ${{secrets.SOURCE_SYS}}
+          TARGET_SYS: ${{secrets.TARGET_SYS}}
+          SCHEMA: ${{secrets.SF_SCHEMA}}
+          HEAD_REF: ${{github.head_ref}}
+          BASE_REF: ${{github.base_ref}}
+          MERGE_STATUS: ${{github.event.pull_request.merged}}
