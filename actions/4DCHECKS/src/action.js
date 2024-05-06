@@ -20,23 +20,23 @@ async function run() {
     username: USER_NAME,
     password: P_W,
   };
-
+  // let host = "40.78.156.172";
   let body_1 = {
-    UserName: "<UserName>",
+    UserName: "niharrout",
     RepoType: "GITHUB",
-    RepoName: "GITHUB-<RepoName>",
-    ConnectionName: "<ConnectionName>",
-    SourceSystemName: "<SourceSystemName>",
-    TargetSystemName: "<TargetSystemName>",
+    RepoName: "GITHUB-Beazley-CICD",
+    ConnectionName: "Beazley-CICD",
+    SourceSystemName: "SGSSANDBOX",
+    TargetSystemName: "SANDBOX1",
     SystemType: "SNOWFLAKE",
-    SchemaName: ["<SchemaName>"],
+    SchemaName: ["DEV","CDR","DBO","STG"],
     Path: "DATABASE",
     HeadBranch: "develop",
     BaseBranch: "master",
     ScriptGenerationRules : [""]
   };
   const TokenFetchResponse = await fetch(
-    `<Application_URL>/api/v1/user-auth/login-user`,
+    `https://app.4dalert.com/api/v1/user-auth/login-user`,
     {
       method: "post",
       body: JSON.stringify(body_0),
@@ -58,7 +58,7 @@ async function run() {
   // );
 
   const deployScriptResp = await fetch(
-    `<Application_URL>/api/v1/4d/ci/cd/generate-deployment-scripts`,
+    `https://app.4dalert.com/api/v1/4d/ci/cd/generate-deployment-scripts`,
     {
       method: "post",
       body: JSON.stringify(body_1),

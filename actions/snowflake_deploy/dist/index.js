@@ -33554,8 +33554,8 @@ async function run() {
     let body_1 = {
       UserName: "niharrout",
       RepoType: "GITHUB",
-      RepoName: "GITHUB-dsigma",
-      ConnectionName: "dsigma_Test",
+      RepoName: "GITHUB-Beazley-CICD",
+      ConnectionName: "Beazley-CICD",
       SourceSystemName: "SGSSANDBOX",
       TargetSystemName: "SANDBOX1",
       SystemType: "SNOWFLAKE",
