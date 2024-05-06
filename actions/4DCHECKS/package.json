@@ -10,17 +10,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/niharrout/dsigma.git"
+    "url": "git+https://github.com/niharrout/Beazley-CICD.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/niharrout/dsigma/issues"
+    "url": "https://github.com/niharrout/Beazley-CICD/issues"
   },
-  "homepage": "https://github.com/niharrout/dsigma#readme",
+  "homepage": "https://github.com/niharrout/Beazley-CICD#readme",
   "dependencies": {
-    "@actions/core": "^1.4.0",
+    "@actions/core": "^1.10.1",
     "@actions/github": "^5.0.0",
     "@vercel/ncc": "^0.29.0",
     "node-fetch": "^2.6.1",
