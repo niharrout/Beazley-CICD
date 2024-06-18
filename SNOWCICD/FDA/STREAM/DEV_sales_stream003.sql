@@ -1,0 +1,1 @@
+create or replace stream FDA."DEV_sales_stream003" on table "DEV_Scenario_TS21003";
